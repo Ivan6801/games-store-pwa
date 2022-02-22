@@ -1,0 +1,5 @@
+.Main {
+  grid-template-columns: minmax(auto, 768px);
+  display: grid;
+  justify-content: center;
+}

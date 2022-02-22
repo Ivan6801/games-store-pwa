@@ -1,0 +1,79 @@
+{
+  "name": "games-store-pwa",
+  "version": "1.0.0",
+  "description": "Proyecto de tienda online de productos de Games con integracion de prueba a PayPal y Google Maps 🚀",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "dev": "webpack serve --open",
+    "build": "webpack --mode production",
+    "format": "prettier --write '{*.js,src/**/*.{js,jsx}}'",
+    "lint": "standard"
+  },
+  "keywords": [
+    "React",
+    "Webpack",
+    "Babel",
+    "JavaScript",
+    "React-router"
+  ],
+  "author": "Ivan Gonzalez <hal308366@gmail.com>>",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.17.5",
+    "@babel/eslint-parser": "^7.17.0",
+    "@babel/plugin-transform-runtime": "^7.17.0",
+    "@babel/preset-env": "^7.16.11",
+    "@babel/preset-react": "^7.16.7",
+    "babel-loader": "^8.2.3",
+    "copy-webpack-plugin": "^10.2.4",
+    "css-loader": "^6.6.0",
+    "enzyme": "^3.11.0",
+    "eslint": "^8.9.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-plugin-import": "^2.25.4",
+    "eslint-plugin-jsx-a11y": "^6.5.1",
+    "eslint-plugin-react": "^7.28.0",
+    "html-loader": "^3.1.0",
+    "html-webpack-plugin": "^5.5.0",
+    "jest": "^27.5.1",
+    "mini-css-extract-plugin": "^2.5.3",
+    "sass": "^1.49.8",
+    "sass-loader": "^12.6.0",
+    "standard": "^16.0.4",
+    "style-loader": "^3.3.1",
+    "webpack": "^5.69.1",
+    "webpack-cli": "^4.9.2",
+    "webpack-dev-server": "^4.7.4"
+  },
+  "dependencies": {
+    "@react-google-maps/api": "^2.7.0",
+    "axios": "^0.26.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-helmet": "^6.1.0",
+    "react-icons": "^4.3.1",
+    "react-paypal-button-v2": "^2.6.3",
+    "react-router-dom": "^5.3.0",
+    "vercel": "^24.0.0"
+  },
+  "eslintConfig": {
+    "extends": [
+      "./node_modules/standard/eslintrc.json"
+    ]
+  },
+  "jest": {
+    "setupFilesAfterEnv": [
+      "<rootDir>/src/__test__/setupTest.js"
+    ],
+    "moduleNameMapper": {
+      "\\.(styl|css)$": "<rootDir>/src/__mocks__/styleMock.js"
+    }
+  },
+  "standard": {
+    "ignore": [
+      "/api/**"
+    ]
+  }
+}
