@@ -1,0 +1,43 @@
+{
+  "icons": [
+    {
+      "src": "/icon_512x512.d6f29ffc6659588b9039009978c0d643.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon_384x384.f3d755e200998242df63af443c699f61.png",
+      "sizes": "384x384",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon_256x256.ce418011d9058c3b25e4f09a8cf28cb6.png",
+      "sizes": "256x256",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon_192x192.aa9c49ebf429d7522f46f6dbd11fd7c2.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon_128x128.8d42cc0ab8202faee01ebebedf7fc85c.png",
+      "sizes": "128x128",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon_96x96.3d1ecbd29d31e0cf5bbd0bcce7c24d3d.png",
+      "sizes": "96x96",
+      "type": "image/png"
+    }
+  ],
+  "name": "Games store",
+  "short_name": "Games store",
+  "orientation": "portrait",
+  "display": "standalone",
+  "start_url": ".",
+  "shortname": "Games 📦",
+  "description": "Hooks",
+  "background_color": "#fff",
+  "theme_color": "#2296F3"
+}

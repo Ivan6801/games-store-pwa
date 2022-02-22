@@ -1,7 +1,8 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const CopyPlugin = require('copy-webpack-plugin');
+const WebpackPwaManifestPlugin = require('webpack-pwa-manifest');
+const WorkboxWebpackPlugin = require('workbox-webpack-plugin');
  
 module.exports = {
   entry: './src/index.js',
@@ -53,15 +54,40 @@ publicPath: '/'
     new MiniCssExtractPlugin({
       filename: '[name].css'
     }),
-    new CopyPlugin({
-      patterns: [
-        { from: 'public/manifest.json', to: '' },
-        { from: 'public/service-worker.js', to: '' },
-        { from: 'public/icon.png', to: 'assets' },
-      ],
-      options: {
-        concurrency: 100,
-      },
+    new WebpackPwaManifestPlugin({
+      name: 'Games store',
+      shortname: 'Games 📦',
+      description: 'Hooks',
+      background_color: '#fff',
+      theme_color: '#2296F3',
+      icons: [
+        {
+          src: path.resolve('./src/assets/logos/games.png'),
+          sizes: [96, 128, 192, 256, 384, 512]
+        }
+      ]
+    }),
+    new WorkboxWebpackPlugin.GenerateSW({
+      swDest: 'service-worker.js',
+      clientsClaim: true,
+      skipWaiting: true,
+      maximumFileSizeToCacheInBytes: 500000000,
+      runtimeCaching: [
+        {
+          urlPattern: new RegExp('https://(res.cloudinary.com|images.unsplash.com)'),
+          handler: 'CacheFirst',
+          options: {
+            cacheName: 'images'
+          }
+        },
+        {
+          urlPattern: new RegExp('https://games-store-pwa.vercel.app/'),
+          handler: 'NetworkFirst',
+          options: {
+            cacheName: 'api'
+          }
+        }
+      ]
     }),
   ],
   devServer: {

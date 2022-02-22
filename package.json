@@ -6,10 +6,10 @@
   "scripts": {
     "test": "jest",
     "test:watch": "jest --watch",
-    "dev": "webpack serve --open",
+    "start": "webpack serve --open",
     "build": "webpack --mode production",
     "format": "prettier --write '{*.js,src/**/*.{js,jsx}}'",
-    "lint": "standard"
+    "lint": "eslint src/ --fix"
   },
   "keywords": [
     "React",
@@ -20,32 +20,31 @@
   ],
   "author": "Ivan Gonzalez <hal308366@gmail.com>>",
   "license": "MIT",
+  "homepage": "https://github.com/Ivan6801/games-store-pwa",
   "devDependencies": {
     "@babel/core": "^7.17.5",
-    "@babel/eslint-parser": "^7.17.0",
     "@babel/plugin-transform-runtime": "^7.17.0",
     "@babel/preset-env": "^7.16.11",
     "@babel/preset-react": "^7.16.7",
     "babel-loader": "^8.2.3",
-    "copy-webpack-plugin": "^10.2.4",
     "css-loader": "^6.6.0",
     "enzyme": "^3.11.0",
-    "eslint": "^8.9.0",
-    "eslint-config-airbnb": "^19.0.4",
-    "eslint-plugin-import": "^2.25.4",
-    "eslint-plugin-jsx-a11y": "^6.5.1",
-    "eslint-plugin-react": "^7.28.0",
+    "eslint-config-prettier": "^8.4.0",
+    "eslint-plugin-prettier": "^4.0.0",
     "html-loader": "^3.1.0",
     "html-webpack-plugin": "^5.5.0",
     "jest": "^27.5.1",
     "mini-css-extract-plugin": "^2.5.3",
+    "prettier": "^2.5.1",
     "sass": "^1.49.8",
     "sass-loader": "^12.6.0",
     "standard": "^16.0.4",
     "style-loader": "^3.3.1",
     "webpack": "^5.69.1",
     "webpack-cli": "^4.9.2",
-    "webpack-dev-server": "^4.7.4"
+    "webpack-dev-server": "^4.7.4",
+    "webpack-pwa-manifest": "^4.3.0",
+    "workbox-webpack-plugin": "^6.4.2"
   },
   "dependencies": {
     "@react-google-maps/api": "^2.7.0",
@@ -70,10 +69,5 @@
     "moduleNameMapper": {
       "\\.(styl|css)$": "<rootDir>/src/__mocks__/styleMock.js"
     }
-  },
-  "standard": {
-    "ignore": [
-      "/api/**"
-    ]
   }
 }
