@@ -7,6 +7,7 @@ import Information from '../containers/Information'
 import Payment from '../containers/Payment'
 import Success from '../containers/Success'
 import NotFound from '../containers/NotFound'
+import User from '../containers/User'
 // Custom hook
 import AppContext from '../context/AppContext'
 import useInitialState from '../hooks/useInitialState'
@@ -23,6 +24,9 @@ const App = () => {
             <Route exact path='/checkout/information' component={Information} />
             <Route exact path='/checkout/payment' component={Payment} />
             <Route exact path="/checkout/success" component={Success} />
+            <Route path="/user/:id">
+              <User />
+            </Route>
             <Route path='*' component={NotFound} />
           </Switch>
         </Layout>

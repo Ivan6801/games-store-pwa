@@ -5,10 +5,10 @@ export default {
   products: [
     {
       'id': '1',
-      'image': 'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6467/6467808cv1d.jpg',
-      'title': 'NVIDIA GeForce RTX 3080 Ti 12GB',
-      'price': 1.99,
-      'description': 'La nomenclatura que identifica a las tarjetas gráficas NVIDIA de consumo general.',
+      'image': 'https://tiendasneto.com.mx/media/catalog/product/cache/cb1e6b076f68ee0ac6e5e542f63310fa/1/0/1040000266-1_14.jpg',
+      'title': 'Coca Cola',
+      'price': 1.19,
+      'description': '13532 REFRESCO COCA COLA 1.75 LTS.',
     },
     {
       'id': '3',
