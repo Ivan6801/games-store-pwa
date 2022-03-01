@@ -1,0 +1,43 @@
+{
+  "icons": [
+    {
+      "src": "/icon_512x512.c1226fd0e1d65a08068f979fc41422c0.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon_384x384.016edcbd5f8c548de37d4ca4f53bd3d8.png",
+      "sizes": "384x384",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon_256x256.b8c456f6beeea8c9997f688397a4c19b.png",
+      "sizes": "256x256",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon_192x192.7d33d0a44c647ea8555f1a324e8893f4.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon_128x128.47f7c491f4bb01dcd36dd877d25cb933.png",
+      "sizes": "128x128",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon_96x96.ebd4a912ac94908203452737bb4fa48d.png",
+      "sizes": "96x96",
+      "type": "image/png"
+    }
+  ],
+  "name": "Tiendas de bebidas",
+  "short_name": "Tiendas de bebidas",
+  "orientation": "portrait",
+  "display": "standalone",
+  "start_url": ".",
+  "shortname": "Tiendas de bebidas",
+  "description": "Venta de bebidas varias 🍹",
+  "background_color": "#fff",
+  "theme_color": "#b1a"
+}

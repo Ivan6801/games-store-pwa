@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import AppContext from '../context/AppContext'
 import { FaShoppingCart } from 'react-icons/fa'
 import '../styles/components/Header.css'
-import logo from '../assets/logos/games.png'
+import logo from '../assets/logos/store.png'
 
 const Header = () => {
   const { state: { cart } } = useContext(AppContext);
