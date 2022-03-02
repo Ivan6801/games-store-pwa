@@ -69,11 +69,16 @@ const Information = () => {
         {cart.map((item, index) => (
           <div className="Information-item" key={index}>
             <div className="Information-element">
-              <h4>{item.title}</h4>
+              <h4>- {item.title}</h4>
               <p>$ {item.price}</p>
             </div>
           </div>
         ))}
+          <hr />
+            <div>
+              {cart.length > 0 ? <h3>Lista de Pedidos: {cart.length}</h3> : <h3>Sin pedidos...</h3>}
+            </div>
+          <hr />
       </div>
     </div>
     </>

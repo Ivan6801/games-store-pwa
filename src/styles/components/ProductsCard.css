@@ -7,10 +7,11 @@
 }
 .Products-item {
   text-decoration: none;
-  box-shadow: 8px 14px 38px rgba(39,44,49,0.06), 1px 3px 8px rgba(39,44,49,0.03);
-  border-radius: 5px;
+  box-shadow: 8px 14px 38px rgba(39, 44, 49, 0.178), 1px 3px 8px rgba(39, 44, 49, 0.226);
+  border-radius: 7px;
   margin: 0 0 20px 0;
   position: relative;
+  padding: 1em;
 }
 .Products-item-info {
   padding: 10px;
@@ -39,7 +40,7 @@
   background: linear-gradient(to bottom, #63b8ee 5%, #468ccf 100%);
   width: 100%;
   padding: 10px;
-  border-radius: 0px 0px 5px 5px;
+  border-radius: 0px 0px 7px 7px;
   border: 0px;
   outline: 0;
   cursor: pointer;

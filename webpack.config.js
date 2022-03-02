@@ -8,7 +8,7 @@ module.exports = {
   entry: './src/index.js',
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: 'bundle.js',
+    filename: '[name].bundle.js',
     publicPath: '/'
   },
   mode: 'development',
@@ -59,7 +59,7 @@ module.exports = {
       shortname: 'Tiendas de bebidas',
       description: 'Venta de bebidas varias 🍹',
       background_color: '#fff',
-      theme_color: '#b1a',
+      theme_color: '#000',
       icons: [
         {
           src: path.resolve('./src/assets/logos/store.png'),
@@ -93,7 +93,7 @@ module.exports = {
   devServer: {
     historyApiFallback: true,
     compress: true,
-    port: 3007,
+    port: 3002,
     open: true
   }
 };

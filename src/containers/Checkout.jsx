@@ -49,7 +49,7 @@ const Checkout = () => {
         ))}
       </div>
       <div className='Checkout-sidebar'>
-        <h3>{`Precio Total: $ ${handleSumTotal()}`}</h3>
+        <h3>{`Precio Total: $ ${handleSumTotal().toFixed(2)}`}</h3>
         <Link to='/checkout/information'>
         <button type="button">Continuar pedido</button>
         </Link>
