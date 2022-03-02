@@ -35,6 +35,8 @@
     "html-loader": "^3.1.0",
     "html-webpack-plugin": "^5.5.0",
     "jest": "^27.5.1",
+    "jsdom": "19.0.0",
+    "jsdom-global": "3.0.2",
     "mini-css-extract-plugin": "^2.5.3",
     "prettier": "^2.5.1",
     "sass": "^1.49.8",
@@ -68,7 +70,9 @@
       "<rootDir>/src/__test__/setupTest.js"
     ],
     "moduleNameMapper": {
-      "\\.(css|less|styl)$": "<rootDir>/src/__mocks__/styleMock.js"
-    }
+      "\\.(styl|css)$": "<rootDir>/src/__mocks__/styleMock.js",
+      "\\.(jpg|jpeg|png|svg)$": "<rootDir>/src/__mocks__/styleMock.js"
+    },
+    "testEnvironment": "jsdom"
   }
 }
